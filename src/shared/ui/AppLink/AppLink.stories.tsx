@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { AppLink, AppLinkTheme } from './AppLink';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
+import { AppLink, AppLinkTheme } from './AppLink';
 
 const meta = {
     title: 'shared/AppLink',
@@ -11,8 +11,8 @@ const meta = {
         // backgroundColor: { control: 'color' },
     },
     args: {
-        to: '/'
-    }
+        to: '/',
+    },
 } satisfies Meta<typeof AppLink>;
 
 export default meta;
@@ -21,8 +21,8 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.PRIMARY
-    }
+        theme: AppLinkTheme.PRIMARY,
+    },
 };
 
 export const PrimaryDark: Story = {
@@ -30,35 +30,35 @@ export const PrimaryDark: Story = {
         children: 'Text',
         theme: AppLinkTheme.PRIMARY,
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
 
 export const Secondary: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
 };
 
 export const SecondaryDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.SECONDARY
+        theme: AppLinkTheme.SECONDARY,
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
 
 export const Red: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
 };
 
 export const RedDark: Story = {
     args: {
         children: 'Text',
-        theme: AppLinkTheme.RED
+        theme: AppLinkTheme.RED,
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
