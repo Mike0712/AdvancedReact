@@ -16,11 +16,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
     args: {},
-    decorators: [StoreDecorator({})],
+    decorators: [StoreDecorator({}, {})],
 };
 
 export const Dark: Story = {
-    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
+    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({}, {})],
     args: {},
 };
 
@@ -28,5 +28,5 @@ export const AutoNavbar: Story = {
     args: {},
     decorators: [StoreDecorator({
         user: { authData: {} },
-    })],
+    }, {})],
 };
