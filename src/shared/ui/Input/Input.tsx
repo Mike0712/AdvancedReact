@@ -81,5 +81,3 @@ export const Input = memo((props: InputProps) => {
         </div>
     );
 });
-
-export default Input;

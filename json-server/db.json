@@ -15,5 +15,14 @@
         "password": "123"
       }
     ],
-    "profile": { "name": "typicode" }
+    "profile": {
+      "firstname": "Mehmed",
+      "lastname": "Cerrie",
+      "age": 27,
+      "currency": "TRY",
+      "country": "Turkiye",
+      "city": "Istanbul",
+      "username": "admin",
+      "avatar": ""
+    }
 }
